@@ -62,8 +62,8 @@ RegisterNetEvent('qb-clothes:client:CreateFirstCharacter', function()  -- Event 
 			headBlend = true,
 			faceFeatures = true,
 			headOverlays = true,
-			components = true,
-			props = true,
+			components = false,
+			props = false,
 		}
 		exports['qb-clothes']:setPlayerAppearance(appearance)
 		exports['qb-clothes']:startPlayerCustomization(function(appearance)
@@ -85,7 +85,7 @@ RegisterNetEvent('qb-clothes:clothingShop', function()
 	exports['qb-menu']:openMenu({
         {
             header = "👚 | Clothing Store Options",
-            isMenuHeader = true, -- Set to true to make a nonclickable title
+            isMenuHeader = false, -- Set to true to make a nonclickable title
         },
         {
             header = "Buy Clothing",
@@ -313,8 +313,8 @@ RegisterNetEvent('qb-clothing:client:openMenu', function()  -- Admin Menu clothi
 		headBlend = true,
 		faceFeatures = true,
 		headOverlays = true,
-		components = true,
-		props = true
+		components = false,
+		props = false
 	}
 	
 	exports['qb-clothes']:startPlayerCustomization(function(appearance)
