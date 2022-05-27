@@ -62,7 +62,7 @@ RegisterNetEvent('qb-clothes:client:CreateFirstCharacter', function()  -- Event 
 			headBlend = true,
 			faceFeatures = true,
 			headOverlays = true,
-			components = false,
+			components = true,
 			props = false,
 		}
 		exports['qb-clothes']:setPlayerAppearance(appearance)
