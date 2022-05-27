@@ -313,8 +313,8 @@ RegisterNetEvent('qb-clothing:client:openMenu', function()  -- Admin Menu clothi
 		headBlend = true,
 		faceFeatures = true,
 		headOverlays = true,
-		components = true,
-		props = true
+		components = false,
+		props = false
 	}
 	
 	exports['qb-clothes']:startPlayerCustomization(function(appearance)
