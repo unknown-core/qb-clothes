@@ -85,7 +85,7 @@ RegisterNetEvent('qb-clothes:clothingShop', function()
 	exports['qb-menu']:openMenu({
         {
             header = "👚 | Clothing Store Options",
-            isMenuHeader = false, -- Set to true to make a nonclickable title
+            isMenuHeader = true, -- Set to true to make a nonclickable title
         },
         {
             header = "Buy Clothing",
