@@ -267,7 +267,7 @@ Config.PedQube = {
 	},
 	[8] = {
         ["nome"] = "pedclothing17",
-		["coordinate"] = vector3(-823.166, -1072.28, 10.328), --354
+		["coordinate"] = vector3(87.74, -1391.9, 29.18),--vector3(-823.166, -1072.28, 10.328), --354 
 		["heading"] = 221.6, --direzione ped
 		["modello"] = "ig_miguelmadrazo",
 		["dict"] = "anim@amb@nightclub@peds@", --catalogo animazione
