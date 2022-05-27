@@ -44,7 +44,7 @@ Config.ClothingShops = {
 	},
 	[8] = {
 		blip = true,
-		coords = vector3(-815.07, -1082.96, 11.04),--vector3(-823.166, -1072.28, 10.328),
+		coords = vector3(-823.166, -1072.28, 10.328),
 		MarkerSize   = {x = 7.0, y = 7.0, z = 1.0}
 	},
 	[9] = {
