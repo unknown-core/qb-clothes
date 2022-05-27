@@ -104,7 +104,7 @@ Config.BarberShops = {
 Config.ClothingRooms = {
     [1] = {requiredJob = "police", coords = vector3(362.74, -1593.51, 25.45)},
     [2] = {requiredJob = "ambulance", coords = vector3(298.8991, -598.097, 43.284)},
-    [3] = {coords = vector3(365.87, -1560.05, 29.33)},
+    [3] = {requiredJob = "police", coords = vector3(365.87, -1560.05, 29.33)},
 }
 
 Config.Outfits = {
