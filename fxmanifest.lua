@@ -5,6 +5,8 @@ shared_script 'config.lua'
 
 client_scripts {
   'game/build/client.js',
+  '@PolyZone/BoxZone.lua',
+	'@PolyZone/ComboZone.lua',
   'client/client.lua',
   'client/ped.lua'
 }
