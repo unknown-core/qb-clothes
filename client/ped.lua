@@ -69,8 +69,8 @@ else
             zones[#zones+1] = BoxZone:Create(
                 v.coordinate, 3, 3, {
                 name = "default",
-                minZ = v.coordinate.z - 3,
-                maxZ = v.coordinate.z + 3,
+                minZ = v.coordinate.z - 1,
+                maxZ = v.coordinate.z + 5,
                 debugPoly = false,
             })
         end
