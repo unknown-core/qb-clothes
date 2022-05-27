@@ -62,7 +62,7 @@ RegisterNetEvent('qb-clothes:client:CreateFirstCharacter', function()  -- Event 
 			headBlend = true,
 			faceFeatures = true,
 			headOverlays = true,
-			components = true,
+			components = false,
 			props = false,
 		}
 		exports['qb-clothes']:setPlayerAppearance(appearance)
@@ -82,7 +82,6 @@ AddEventHandler('qb-clothes:hasExitedMarker', function(zone)
 end)
 
 RegisterNetEvent('qb-clothes:clothingShop', function()
-	
 	exports['qb-menu']:openMenu({
         {
             header = "👚 | Clothing Store Options",
