@@ -67,10 +67,10 @@ else
         local zones = {}
         for k, v in pairs(Config.PedQube) do
             zones[#zones+1] = BoxZone:Create(
-                v.coordinate, 2, 2, {
+                v.coordinate, 3, 3, {
                 name = "default",
-                minZ = v.coordinate.z - 2,
-                maxZ = v.coordinate.z + 2,
+                minZ = v.coordinate.z - 3,
+                maxZ = v.coordinate.z + 3,
                 debugPoly = false,
             })
         end
