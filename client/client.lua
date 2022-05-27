@@ -82,6 +82,7 @@ AddEventHandler('qb-clothes:hasExitedMarker', function(zone)
 end)
 
 RegisterNetEvent('qb-clothes:clothingShop', function()
+	exports['qb-core']:DrawText(Lang:t('test'), 'left')
 	exports['qb-menu']:openMenu({
         {
             header = "👚 | Clothing Store Options",
