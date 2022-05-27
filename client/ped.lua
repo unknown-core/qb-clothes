@@ -138,7 +138,7 @@ else
                         -- })
 						TriggerEvent("qb-clothes:clothingShop")
                     end
-				elseif zoneName == 'ig_miguelmadrazo' then
+				elseif zoneName == 's_f_y_clubbar_02' then
 					if IsControlJustReleased(0, 38) then
 						-- customCamLocation = nil
 						-- openMenu({
