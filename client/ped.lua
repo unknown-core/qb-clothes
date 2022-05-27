@@ -68,7 +68,7 @@ else
         for k, v in pairs(Config.PedQube) do
             zones[#zones+1] = BoxZone:Create(
                 v.coordinate, 5, 5, {
-                name = "default",
+                name = v.modello,
                 minZ = v.coordinate.z - 5,
                 maxZ = v.coordinate.z + 5,
                 debugPoly = false,
@@ -80,8 +80,10 @@ else
             if isPointInside then
                 zoneName = zone.name
                 inZone = true
-                if zoneName == 'default' then
+                if zoneName == 'ig_miguelmadrazo' then
                     exports['qb-core']:DrawText('[E] - Clothing Shop', 'left')
+				elseif zoneName == 's_f_y_clubbar_02' then
+					exports['qb-core']:DrawText('[E] - Barber Shop', 'left')
 				end
                 -- elseif zoneName == 'barber' then
                 --     exports['qb-core']:DrawText('[E] - Barber', 'left')
@@ -127,7 +129,7 @@ else
             local sleep = 1000
             if inZone then
                 sleep = 5
-                if zoneName == 'default' then
+                if zoneName == 'ig_miguelmadrazo' then
                     if IsControlJustReleased(0, 38) then
                         -- customCamLocation = nil
                         -- openMenu({
@@ -136,6 +138,15 @@ else
                         -- })
 						TriggerEvent("qb-clothes:clothingShop")
                     end
+				elseif zoneName == 'ig_miguelmadrazo' then
+					if IsControlJustReleased(0, 38) then
+						-- customCamLocation = nil
+						-- openMenu({
+						--     {menu = "character", label = "Clothing", selected = true},
+						--     {menu = "accessoires", label = "Accessories", selected = false}
+						-- })
+						TriggerEvent("qb-clothes:barberMenu")
+					end
 				end
                 -- elseif zoneName == 'barber' then
                 --     if IsControlJustReleased(0, 38) then
