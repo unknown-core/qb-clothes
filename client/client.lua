@@ -826,10 +826,7 @@ RegisterNetEvent('qb-clothes:client:reloadSkin', function()
     end
 end)
 
-RegisterNUICallback('selectOutfit', function(data, cb)
-    TriggerEvent('qb-clothing:client:loadOutfit', data)
-    cb('ok')
-end)
+
 
 
 RegisterNetEvent('qb-clothing:client:loadOutfit', function(oData)
